@@ -32,8 +32,7 @@ jobs:
   sync:
     needs: [compare, analyze]
     runs-on: ubuntu-latest
-    permissions:
-      workflows: write
+    permissions: write-all
 
     steps:
     - uses: actions/checkout@v2
